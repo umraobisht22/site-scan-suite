@@ -52,11 +52,7 @@ export const ProgressTracker: React.FC<ProgressTrackerProps> = ({ stats, isProce
           </div>
           
           <div className="flex items-center gap-2">
-            {inProgress > 0 ? (
-              <Loader2 className="h-4 w-4 text-primary animate-spin" />
-            ) : (
-              <Clock className="h-4 w-4 text-muted-foreground" />
-            )}
+            <Loader2 className="h-4 w-4 text-primary animate-spin" />
             <div className="text-sm">
               <div className="font-medium">In Progress</div>
               <div className="text-muted-foreground">{inProgress}</div>
